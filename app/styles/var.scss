@@ -1,0 +1,164 @@
+@mixin fwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin fcenter {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin abs {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@mixin lato($w, $s) {
+  font-family: 'Lato', sans-serif;
+  font-weight: $w;
+  font-size: #{$s}px;
+}
+
+@mixin hand($s) {
+  font-family: 'HandOfSean';
+  font-size: #{$s}px;
+  letter-spacing: 1px;
+}
+
+@mixin clearfix {
+  clear: both;
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+@mixin elipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin sans($w) {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: $w;
+}
+
+@mixin phone() {
+    @media only screen and (max-width: 479px) {
+        @content;
+    }
+}
+
+@mixin phone-mini() {
+    @media only screen and (max-width: 379px) {
+        @content;
+    }
+}
+
+@mixin mini() {
+    @media only screen and (max-width: 560px) {
+        @content;
+    }
+}
+
+@mixin media($r) {
+    @media only screen and (max-width: #{$r}px) {
+        @content;
+    }
+}
+
+@mixin media-h($r) {
+    @media only screen and (max-height: #{$r}px) {
+        @content;
+    }
+}
+
+@mixin media-m($r,$r2) {
+    @media (min-width: #{$r}px) and (max-width: #{$r2}px) {
+        @content;
+    }
+}
+
+@mixin small() {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin l-small() {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin s-middle() {
+    @media (min-width: 768px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin middle() {
+    @media only screen and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin large() {
+    @media (min-width: 993px) {
+        @content;
+    }
+}
+
+@mixin g-large() {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin s-large() {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin l-large() {
+    @media (min-width: 1200px) and (max-width: 1349px) {
+        @content;
+    }
+}
+
+@mixin xl-large() {
+    @media (min-width: 1350px) {
+        @content;
+    }
+}
+
+@mixin xs-large() {
+    @media (max-width: 1349px) {
+        @content;
+    }
+}
+
+@mixin retina() {
+  @media
+      only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+      only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+      only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+      only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+      only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+      only screen and (                min-resolution: 2dppx)  and (min-width: 320px) {
+        @content;
+  }
+}
