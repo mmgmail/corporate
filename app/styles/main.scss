@@ -18,6 +18,12 @@ a {
   color: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 button, a {
   padding: 0;
   outline: none;
@@ -45,16 +51,41 @@ body {
   flex: 1 0 auto;
 }
 
+.custom-button-orange {
+  width: 274px;
+  height: 70px;
+  border-radius: 35px;
+  background-image: linear-gradient(20deg, $pumpkin-orange, rgb(251, 206, 89));
+  box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.2);
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  color: $white;
+  display: flex;
+  @include fcenter;
+  line-height: 1;
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  }
+}
+.text-sky {
+  color: $dodger-blue;
+}
+
 /*** Head ***/
 
 .corporate {
-
   &__head {
     max-width: 1150px;
     height: 100%;
-    background-color: $white;
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 39%,rgba(255,255,255,0) 100%);
     margin: auto;
     padding: 0 15px;
+    min-height: 80px;
+    position: relative;
+    z-index: 1;
 
     &_top {
       display: flex;
@@ -104,6 +135,63 @@ body {
         &:active {
           box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
         }
+      }
+    }
+  }
+}
+
+/*** Bcg-1 ***/
+
+.corporate {
+  &__bcg-1 {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 850px;
+
+    &:before {
+      content: '';
+      @include abs;
+      position: fixed;
+      background: url(../images/marble.png) no-repeat right bottom;
+      z-index: -1;
+    }
+
+    &_vegies {
+      @include abs;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &__inner {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      @include abs;
+
+      &_title {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        color: $black-three;
+        margin: 0 auto 40px;
+      }
+
+      &_subtitle {
+        font-size: 22px;
+        text-align: center;
+        color: $battleship-grey;
+        margin-bottom: 50px;
+      }
+
+      .custom-button-orange {
+        min-height: 70px;
       }
     }
   }
