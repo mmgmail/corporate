@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Europa-Regular";
+    src: url("europa-regular-webfont.eot");
+    src: url("europa-regular-webfont.eot?#iefix") format("embedded-opentype"),
+         url("europa-regular-webfont.woff2") format("woff2"),
+         url("europa-regular-webfont.woff") format("woff"),
+         url("europa-regular-webfont.ttf") format("ttf"),
+         url("europa-regular-webfont.svg#Europa-Regular") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}

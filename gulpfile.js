@@ -5,6 +5,23 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
+const fontgen = require('gulp-fontgen');
+const concat = require('gulp-concat');
+
+gulp.task('fontgen', function() {
+  return gulp.src('app/fonts/*.{ttf,otf}')
+    .pipe(fontgen({
+      dest: 'app/fonts/'
+    }));
+});
+
+gulp.task('concat', function() {
+  return gulp.src('app/fonts/*.css')
+    .pipe(concat('fonts.scss'))
+    .pipe(gulp.dest('app/styles/'));
+});
+
+gulp.task('font', ['fontgen', 'concat']);
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
