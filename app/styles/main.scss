@@ -38,6 +38,12 @@ button, a {
   }
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 body {
   background: #fafafa;
   font-family: "Europa-Regular", sans-serif;
@@ -356,6 +362,16 @@ body {
         }
       }
     }
+  }
+}
+
+/*** Bcg-3 ***/
+
+.corporate {
+  &__bcg-3 {
+    background-color: $white;
+    position: relative;
+    z-index: 1;
   }
 }
 
