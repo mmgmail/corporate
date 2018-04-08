@@ -491,7 +491,7 @@ body {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          max-width: auto;
+          max-width: none;
         }
       }
     }
@@ -528,23 +528,40 @@ body {
 }
 
 .polaroid-images {
-  max-width: 700px;
+  max-width: 635px;
+  width: 100%;
   margin: auto;
   position: relative;
 
+  &__center-item {
+    display: block;
+    width: 100%;
+    max-width: 72%;
+    margin: auto;
+    position: relative;
+    height: 30vw;
+    min-height: 400px;
+    max-height: 500px;
+  }
+
   &__item {
     background: #e7e8ea;
-    display: block;
     padding: 25px 25px 105px;
     text-align: center;
     text-decoration: none;
     transition: all .15s linear;
-    z-index: 1;
+    z-index: 3;
     position:relative;
     box-shadow: 0px 2px 6px 0 $black-14;
-    width: 100%;
-    max-width: 95%;
-    margin: auto;
+    display: block;
+    @include abs;
+
+    .polaroid-images__item_photo img {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
     &:before {
       content: '';
@@ -569,22 +586,58 @@ body {
       height: 105px;
       display: flex;
       @include fcenter;
+      opacity: 0;
     }
 
     &.fake-item {
       position: absolute;
-      left: -60px;
+      left: 30px;
       top: 25px;
       bottom: 35px;
       transform: rotate(-8deg);
+      z-index: 1;
+      width: 100%;
+      max-width: 62%;
 
       & + & {
         top: 30px;
-        right: -55px;
+        right: 30px;
         left: auto;
         bottom: 40px;
         transform: rotate(5deg);
       }
+    }
+
+    &.is-active {
+      z-index: 4;
+      .polaroid-images__item_photo img {
+        opacity: 1;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &_arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    color: #fff;
+    background: #666;
+    border: none;
+    z-index: 10;
+
+    &.arrow-left {
+      left: 0;
+    }
+
+    &.arrow-right {
+      right: 0;
     }
   }
 }
