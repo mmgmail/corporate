@@ -10,6 +10,17 @@
     font-weight: 300;
 }
 @font-face {
+    font-family: "SanFranciscoText";
+    src: url("../fonts/SanFranciscoText-Regular.eot");
+    src: url("../fonts/SanFranciscoText-Regular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/SanFranciscoText-Regular.woff2") format("woff2"),
+         url("../fonts/SanFranciscoText-Regular.woff") format("woff"),
+         url("../fonts/SanFranciscoText-Regular.ttf") format("ttf"),
+         url("../fonts/SanFranciscoText-Regular.svg#SanFranciscoText-Regular") format("svg");
+    font-style: normal;
+    font-weight: regular;
+}
+@font-face {
     font-family: "Europa";
     src: url("../fonts/europa-bold-webfont.eot");
     src: url("../fonts/europa-bold-webfont.eot?#iefix") format("embedded-opentype"),
