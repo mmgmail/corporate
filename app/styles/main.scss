@@ -401,6 +401,9 @@ body {
     &_img-list {
       overflow-x: auto;
       margin: 80px auto 0;
+      display: flex;
+      justify-content: flex-end;
+
       img {
         min-width: 1200px;
       }
@@ -646,6 +649,132 @@ body {
   &__footer {
     position: relative;
     z-index: 1;
-    background: $white;
+    background: ß$white;
+  }
+}
+
+/*** Bcg-5 ***/
+
+.corporate {
+  &__bcg-5 {
+    position: relative;
+    z-index: 1;
+    background-image: linear-gradient(45deg, $white, rgb(240, 243, 246));
+    display: flex;
+
+    &_left {
+      position: relative;
+      width: 100%;
+      margin-right: -26%;
+      min-width: 1150px;
+    }
+
+    &_right {
+      width: 100%;
+      max-width: 700px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      padding-right: 15px;
+      margin-right: 6%;
+    }
+
+    &_title {
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 1.1;
+      letter-spacing: normal;
+      text-align: center;
+      color: $black-three;
+      margin-bottom: 35px;
+    }
+
+    &_text {
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: center;
+      color: $warm-grey-nine;
+    }
+
+    &__info {
+      position: absolute;
+      width: 231px;
+      border-radius: 20px;
+      background-color: $white;
+      box-shadow: 0px 4px 10px 0 rgba(0, 0, 0, 0.1);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+
+      &.info-men {
+        bottom: 10%;
+        left: 14%;
+      }
+
+      &.info-women {
+        bottom: 20%;
+        left: 47%;
+      }
+
+      &_head {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $pale-grey-two;
+        padding: 18px;
+
+        &_item {
+
+          display: flex;
+          flex-direction: column;
+          @include fcenter;
+        }
+      }
+
+      &_icon {
+        font-size: 40px;
+        font-weight: bold;
+        color: $black-three;
+        height: 55px;
+        line-height: 1;
+      }
+
+      &_note {
+        font-size: 8px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        text-align: left;
+        color: $black-three;
+        text-transform: uppercase;
+      }
+
+      &_body {
+        padding: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__list {
+
+        &_title {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 1.67;
+          color: $black-three;
+        }
+
+        &_item {
+          font-size: 16px;
+          line-height: 1.88;
+          color: $black-three;
+          padding-left: 5px;
+        }
+      }
+    }
   }
 }
