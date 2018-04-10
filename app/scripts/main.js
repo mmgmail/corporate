@@ -174,7 +174,7 @@
            complete: function() {
              $('.corporate__bcg-3_img-list img').velocity(
                { opacity: 1, translateX: [ 0, 500 ] },
-               { display: 'block', duration: 2600 });
+               { display: 'block', duration: 1600 });
              scene4.removeVelocity();
            }
          })
