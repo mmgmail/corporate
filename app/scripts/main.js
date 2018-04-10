@@ -7,9 +7,6 @@
     var polaroidArrowLeft = $('.polaroid-images .arrow-left');
     var polaroidArrowRight = $('.polaroid-images .arrow-right');
 
-
-    //polaroidArrowLeft.hammer(options).bind("swipeleft", hadlerOnLeft);
-
     var hadlerOnLeft = function() {
       var self = this;
       $(this).attr('disabled', true);
@@ -113,6 +110,7 @@
     $('.polaroid-images').hammer().bind("swipeleft", hadlerOnLeft.bind(this));
     $('.polaroid-images').hammer().bind("swiperight", hadlerOnRight.bind(this));
 
+    // animation
     $('.corporate__head__nav_btn').velocity({ opacity: 1, translateX: [ 0, 100 ] }, { display: 'flex', duration: 1000 });
     $('.corporate__bcg-1__inner_title').velocity('transition.slideDownIn', 800)
     $('.corporate__bcg-1__inner_subtitle').velocity('transition.slideUpIn', 300, function() {
@@ -123,6 +121,17 @@
       { stagger: 100, complete: function() {
       $('.corporate__bcg-1__inner_phone').velocity('transition.slideUpBigIn');
     }});
+
+    $('.corporate__head__nav_menu-togler').change(function() {
+      var check = $(this).find('input[type="checkbox"]');
+      setTimeout(function() {
+        if(check.is(':checked')) {
+          $('.corporate__head__nav_inner').velocity('transition.fadeIn', {display: 'flex'});
+        } else {
+          $('.corporate__head__nav_inner').velocity('transition.fadeOut');
+        }
+      }, 10);
+    });
 
   	// init controller
   	var controller = new ScrollMagic.Controller();
