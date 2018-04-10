@@ -225,4 +225,9 @@
         //.addIndicators()
         .addTo(controller);
 
+      var scene7 = new ScrollMagic.Scene({triggerElement: ".corporate", triggerHook: 0})
+         .setPin(".corporate__head_fixed")
+         //.addIndicators()
+         .addTo(controller);
+
 })();
