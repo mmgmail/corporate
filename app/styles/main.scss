@@ -688,13 +688,36 @@ body {
     background: #666;
     border: none;
     z-index: 10;
+    opacity: 0.6;
+
+    i {
+      border: solid $white;
+      border-width: 0 1px 1px 0;
+      display: inline-block;
+      padding: 6px;
+    }
 
     &.arrow-left {
       left: 0;
+
+      i {
+        transform: rotate(135deg);
+        margin-left: 6px;
+      }
+
     }
 
     &.arrow-right {
       right: 0;
+
+      i {
+        margin-left: -6px;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 }
