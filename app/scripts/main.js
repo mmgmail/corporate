@@ -7,7 +7,7 @@
     var polaroidArrowLeft = $('.polaroid-images .arrow-left');
     var polaroidArrowRight = $('.polaroid-images .arrow-right');
 
-    var hadlerOnLeft = function() {
+    function hadlerOnLeft() {
       var self = this;
       $(this).attr('disabled', true);
       var currentIndex = $('.polaroid-images__item.is-active').index();
@@ -56,7 +56,7 @@
         });
     }
 
-    var hadlerOnRight = function() {
+    function hadlerOnRight() {
       var self = this;
       $(this).attr('disabled', true);
       var currentIndex = $('.polaroid-images__item.is-active').index();
@@ -105,10 +105,10 @@
         });
     }
 
-    polaroidArrowLeft.on('click', hadlerOnLeft.bind(this));
-    polaroidArrowRight.on('click', hadlerOnRight.bind(this));
-    $('.polaroid-images').hammer().bind("swipeleft", hadlerOnLeft.bind(this));
-    $('.polaroid-images').hammer().bind("swiperight", hadlerOnRight.bind(this));
+    polaroidArrowLeft.on('click', hadlerOnLeft);
+    polaroidArrowRight.on('click', hadlerOnRight);
+    $('.polaroid-images').hammer().bind("swipeleft", hadlerOnLeft);
+    $('.polaroid-images').hammer().bind("swiperight", hadlerOnRight);
 
     // animation
     $('.corporate__head__nav_btn').velocity({ opacity: 1, translateX: [ 0, 100 ] }, { display: 'flex', duration: 1000 });
