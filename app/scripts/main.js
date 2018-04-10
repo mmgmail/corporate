@@ -17,10 +17,10 @@
       $('.polaroid-images__item.is-active').velocity(
         {
           translateZ: 0,
-          rotateZ: "-34deg",
+          rotateZ: '-34deg',
           scale: 0.5,
-          translateX: "-120px",
-          translateY: "-180px",
+          translateX: '-120px',
+          translateY: '-180px',
           zIndex: 998,
           opacity: 1
         }, {
@@ -66,10 +66,10 @@
       $('.polaroid-images__item.is-active').velocity(
         {
           translateZ: 0,
-          rotateZ: "34deg",
+          rotateZ: '34deg',
           scale: 0.5,
-          translateX: "120px",
-          translateY: "-180px",
+          translateX: '120px',
+          translateY: '-180px',
           zIndex: 998,
           opacity: 1
         }, {
@@ -107,8 +107,8 @@
 
     polaroidArrowLeft.on('click', hadlerOnLeft);
     polaroidArrowRight.on('click', hadlerOnRight);
-    $('.polaroid-images').hammer().bind("swipeleft", hadlerOnLeft);
-    $('.polaroid-images').hammer().bind("swiperight", hadlerOnRight);
+    $('.polaroid-images').hammer().bind('swipeleft', hadlerOnLeft);
+    $('.polaroid-images').hammer().bind('swiperight', hadlerOnRight);
 
     // animation
     $('.corporate__head__nav_btn').velocity({ opacity: 1, translateX: [ 0, 100 ] }, { display: 'flex', duration: 1000 });
@@ -137,8 +137,8 @@
   	var controller = new ScrollMagic.Controller();
 
   	// build scene
-  	var scene1 = new ScrollMagic.Scene({triggerElement: ".corporate__bcg-2"})
-				.setVelocity(".corporate__bcg-2__products",
+  	var scene1 = new ScrollMagic.Scene({triggerElement: '.corporate__bcg-2'})
+				.setVelocity('.corporate__bcg-2__products',
           { display: 'flex',
             opacity: 1,
             duration: 10,
@@ -150,8 +150,8 @@
 				//.addIndicators()
 				.addTo(controller);
 
-     var scene2 = new ScrollMagic.Scene({triggerElement: ".corporate__bcg-2__started_phone", triggerHook: 0.7})
-				.setVelocity(".corporate__bcg-2__started_phone",
+     var scene2 = new ScrollMagic.Scene({triggerElement: '.corporate__bcg-2__started_phone', triggerHook: 0.7})
+				.setVelocity('.corporate__bcg-2__started_phone',
           { opacity: 1,
             duration: 10,
             complete: function() {
@@ -169,8 +169,8 @@
 				//.addIndicators()
 				.addTo(controller);
 
-     var scene3 = new ScrollMagic.Scene({triggerElement: ".corporate__bcg-2__started_info", triggerHook: 0.6})
-				.setVelocity(".corporate__bcg-2__started_info",
+     var scene3 = new ScrollMagic.Scene({triggerElement: '.corporate__bcg-2__started_info', triggerHook: 0.6})
+				.setVelocity('.corporate__bcg-2__started_info',
          { opacity: 1,
            duration: 10,
            complete: function() {
@@ -184,23 +184,22 @@
 				//.addIndicators()
 				.addTo(controller);
 
-     var scene4 = new ScrollMagic.Scene({triggerElement: ".corporate__bcg-3_img-list", triggerHook: 0.5})
-        .setVelocity(".corporate__bcg-3_img-list",
+     var scene4 = new ScrollMagic.Scene({triggerElement: '.corporate__bcg-3_img-list', triggerHook: 0.5})
+        .setVelocity('.corporate__bcg-3_img-list',
          { opacity: 1,
            duration: 10,
            complete: function() {
              $('.corporate__bcg-3_img-list img').velocity(
                { opacity: 1, translateX: [ 0, 1000 ] },
-               { display: 'block', duration: 1000, easing: [ 450, 35 ] },
-             );
+               { display: 'block', duration: 1000, easing: [ 450, 35 ] });
              scene4.removeVelocity();
            }
          })
         //.addIndicators()
         .addTo(controller);
 
-     var scene5 = new ScrollMagic.Scene({triggerElement: ".polaroid-images", triggerHook: 0.5})
-        .setVelocity(".polaroid-images",
+     var scene5 = new ScrollMagic.Scene({triggerElement: '.polaroid-images', triggerHook: 0.5})
+        .setVelocity('.polaroid-images',
          { opacity: 1,
            duration: 100,
            complete: function() {
@@ -213,8 +212,8 @@
         //.addIndicators()
         .addTo(controller);
 
-     var scene6 = new ScrollMagic.Scene({triggerElement: ".corporate__bcg-5_left", triggerHook: 0.5})
-        .setVelocity(".corporate__bcg-5_left",
+     var scene6 = new ScrollMagic.Scene({triggerElement: '.corporate__bcg-5_left', triggerHook: 0.5})
+        .setVelocity('.corporate__bcg-5_left',
           { opacity: 1,
             duration: 100,
             complete: function() {
@@ -225,8 +224,8 @@
         //.addIndicators()
         .addTo(controller);
 
-      var scene7 = new ScrollMagic.Scene({triggerElement: ".corporate", triggerHook: 0})
-         .setPin(".corporate__head_fixed")
+      var scene7 = new ScrollMagic.Scene({triggerElement: '.corporate', triggerHook: 0})
+         .setPin('.corporate__head_fixed')
          //.addIndicators()
          .addTo(controller);
 

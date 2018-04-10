@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Europa-LightItalic";
+    src: url("europa-lightitalic-webfont.eot");
+    src: url("europa-lightitalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("europa-lightitalic-webfont.woff2") format("woff2"),
+         url("europa-lightitalic-webfont.woff") format("woff"),
+         url("europa-lightitalic-webfont.ttf") format("ttf"),
+         url("europa-lightitalic-webfont.svg#Europa-LightItalic") format("svg");
+    font-style: normal;
+    font-weight: 300;
+}
