@@ -133,6 +133,29 @@
       }, 10);
     });
 
+    //dinamic words
+
+    var wordsArray = ['My Body', 'My Metabolism', 'My Goals', 'My Life'];
+    for(var i = 0; i < wordsArray.length; i++) {
+      if (i === 0) {
+        $('.corporate__bcg-1__inner_title .text-sky').append('<span class="is-visible">' + wordsArray[i] + '</span>');
+        $('.corporate__bcg-1__inner_title .text-sky').css('padding-right', $('.corporate__bcg-1__inner_title .text-sky .is-visible').width());
+      } else {
+        $('.corporate__bcg-1__inner_title .text-sky').append('<span class="is-hidden">' + wordsArray[i] + '</span>');
+      }
+    }
+
+    setInterval(function() {
+      var visible = $('.corporate__bcg-1__inner_title .text-sky .is-visible');
+      if(visible.index() === $('.corporate__bcg-1__inner_title .text-sky > span').length - 1) {
+          visible.removeClass('is-visible').addClass('is-hidden');
+          $('.corporate__bcg-1__inner_title .text-sky span:first').removeClass('is-hidden').addClass('is-visible');
+      } else {
+          visible.removeClass('is-visible').addClass('is-hidden').next().removeClass('is-hidden').addClass('is-visible');
+          $('.corporate__bcg-1__inner_title .text-sky').css('padding-right', $('.corporate__bcg-1__inner_title .text-sky .is-visible').width());
+      }
+    }, 4000);
+
   	// init controller
   	var controller = new ScrollMagic.Controller();
 
