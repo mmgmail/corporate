@@ -615,7 +615,7 @@ body {
     box-shadow: 0px 2px 6px 0 $black-14;
     display: block;
     @include abs;
-    transform-origin: 0 100%;
+    transform-origin: right center;
     z-index: 996;
 
     .polaroid-images__item_photo {
@@ -651,7 +651,6 @@ body {
       height: 105px;
       display: flex;
       @include fcenter;
-      //opacity: 0;
     }
 
     &.fake-item {
@@ -672,13 +671,6 @@ body {
         transform: rotate(5deg);
       }
     }
-
-    // &.in-progress-on {
-    //   z-index: 999!important;
-    //   .polaroid-images__item_photo {
-    //
-    //   }
-    // }
 
     &.is-active {
       z-index: 998!important;

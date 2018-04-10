@@ -14,6 +14,7 @@
       $(this).attr('disabled', true);
       var currentIndex = $('.polaroid-images__item.is-active').index();
       $('.polaroid-images__item').removeClass('in-progress-off');
+      polaroidSlide.css('transform-origin', 'left 80%');
 
       $('.polaroid-images__item.is-active').velocity(
         {
@@ -46,7 +47,7 @@
                 translateX: [0, -120],
                 translateY: [0, -180],
               }, {
-                delay: 50,
+                delay: 100,
                 complete: function() {
                   $(self).attr('disabled', false);
                 }
@@ -61,6 +62,7 @@
     $(this).attr('disabled', true);
     var currentIndex = $('.polaroid-images__item.is-active').index();
     $('.polaroid-images__item').removeClass('in-progress-off');
+    polaroidSlide.css('transform-origin', 'right 80%');
 
     $('.polaroid-images__item.is-active').velocity(
       {
@@ -68,7 +70,7 @@
         rotateZ: "34deg",
         scale: 0.5,
         translateX: "120px",
-        translateY: "180px",
+        translateY: "-180px",
         zIndex: 998
       }, {
         progress: function(element) {
@@ -91,9 +93,9 @@
               rotateZ: [0, 34],
               scale: [1, 0.5],
               translateX: [0, 120],
-              translateY: [0, 180]
+              translateY: [0, -180]
             }, {
-              delay: 50,
+              delay: 100,
               complete: function() {
                 $(self).attr('disabled', false);
               }
