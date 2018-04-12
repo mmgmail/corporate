@@ -11,6 +11,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/object-fit/dist/polyfill.object-fit.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -546,6 +547,9 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/closest/closest.js"></script>
+    <script src="/bower_components/raf.js/raf.js"></script>
+    <script src="/bower_components/object-fit/dist/polyfill.object-fit.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -557,6 +561,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.10/hammer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.10/jquery.hammer.js"></script>
+
+    <script>
+      objectFit.polyfill({
+        selector: 'img', // this can be any CSS selector
+        fittype: 'cover', // either contain, cover, fill or none
+        disableCrossDomain: 'true' // either 'true' or 'false' to not parse external CSS files.
+      });
+    </script>
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>

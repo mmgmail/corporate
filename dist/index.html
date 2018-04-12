@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    
+    <link rel="stylesheet" href="styles/vendor.css">
 
     <link rel="stylesheet" href="styles/main.css">
 
@@ -545,6 +545,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.10/hammer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.10/jquery.hammer.js"></script>
+
+    <script>
+      objectFit.polyfill({
+        selector: 'img', // this can be any CSS selector
+        fittype: 'cover', // either contain, cover, fill or none
+        disableCrossDomain: 'true' // either 'true' or 'false' to not parse external CSS files.
+      });
+    </script>
 
     <script src="scripts/main.js"></script>
   </body>
