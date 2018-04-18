@@ -1339,6 +1339,58 @@ body {
   }
 }
 
+.bcg-row {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.bcg-row-half {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  & > * {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    & > * {
+      width: 48.8%;
+    }
+  }
+}
+
+.bcg-custom-field {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: inset 0px 4px 4.4px 1.6px rgba(0, 0, 0, 0.08);
+  background-color: $white;
+  border: solid 2px $bluey-grey;
+  padding: 15px;
+  font-size: 16px;
+  outline: none;
+  transiton: border-color 0.3s;
+
+  @include placeholder() {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: $bluey-grey;
+  }
+
+  &:focus {
+    border-color: $dodger-blue;
+  }
+}
+
+textarea.bcg-custom-field {
+  height: auto;
+  min-height: 130px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
 .bcg-main-bg {
   position: relative;
   min-height: 649px;
@@ -1352,10 +1404,14 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    max-width: auto;
+    max-width: none;
     object-fit: cover;
-    object-position: 100% top;
+    object-position: 60% top;
     z-index: -1;
+
+    @include small() {
+      opacity: 0.5;
+    }
   }
 
   &__inner {
@@ -1373,6 +1429,10 @@ body {
   margin-top: -350px;
   position: relative;
   z-index: 1;
+
+  @include small() {
+    margin-top: -330px;
+  }
 }
 
 .bcg-contact-from {
@@ -1381,6 +1441,7 @@ body {
   border-radius: 10px;
   background-color: $white;
   box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 
   &__groups {
     width: calc(100% - 284px);
@@ -1394,17 +1455,35 @@ body {
       letter-spacing: normal;
       text-align: left;
       color: $black-three;
-      margin: 0;
+      margin: 0 0 30px;
       padding: 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @include small() {
+        margin: 0 0 20px;
+      }
+    }
+
+    &_submit {
+      text-align: right;
+
+      .custom-button-orange {
+        display: inline-block;
+        width: 175px;
+        height: 45px;
+        border: none;
+        font-size: 16px;
+      }
+      @include small() {
+        text-align: center;
+      }
     }
   }
 
   &__info {
     width: 284px;
-    height: 504px;
     background-image: linear-gradient(45deg, $dodger-blue, rgb(57, 238, 255));
     padding: 40px;
 
@@ -1415,6 +1494,9 @@ body {
       font-weight: bold;
       text-align: left;
       color: rgb(24, 78, 136);
+      @include small() {
+        margin: 0 0 10px;
+      }
     }
 
     &_sub-title {
@@ -1459,6 +1541,21 @@ body {
       &.top-helper {
         margin-top: 30px;
       }
+    }
+  }
+
+  @include small() {
+    &__groups, &__info {
+      width: 100%;
+      padding: 20px;
+    }
+
+    &__info {
+      order: 0;
+    }
+
+    &__groups {
+      order: 1;
     }
   }
 }
