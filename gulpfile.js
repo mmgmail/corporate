@@ -139,11 +139,13 @@ gulp.task('serve', () => {
     });
 
     gulp.watch([
+      '.tmp/*.html',
       'app/*.html',
       'app/images/**/*',
       '.tmp/fonts/**/*'
     ]).on('change', reload);
 
+    gulp.watch('app/*.html', ['fileinclude']);
     gulp.watch('app/styles/**/*.scss', ['styles']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/fonts/**/*', ['fonts']);
