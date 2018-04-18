@@ -7,6 +7,16 @@ const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 const fontgen = require('gulp-fontgen');
 const concat = require('gulp-concat');
+const fileinclude = require('gulp-file-include');
+
+gulp.task('fileinclude', function() {
+  gulp.src(['app/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('.tmp'));
+});
 
 gulp.task('fontgen', function() {
   return gulp.src('app/fonts/*.{ttf,otf}')
@@ -72,6 +82,10 @@ gulp.task('lint:test', () => {
 
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
     // .pipe($.if(/\.css$/, $.cssnano({safe: true, autoprefixer: false})))
@@ -112,7 +126,7 @@ gulp.task('extras', () => {
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
 gulp.task('serve', () => {
-  runSequence(['clean', 'wiredep'], ['styles', 'scripts', 'fonts'], () => {
+  runSequence(['clean', 'wiredep'], ['fileinclude', 'styles', 'scripts', 'fonts'], () => {
     browserSync.init({
       notify: false,
       port: 9000,
@@ -182,7 +196,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

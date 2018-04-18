@@ -1,5 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>prog</title>
 
-      @@include('./header.html')
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/object-fit/dist/polyfill.object-fit.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <main class="corporate">
+
+      <header class="corporate__head_fixed">
+        <div class="corporate__head">
+          <div class="corporate__head_top">
+            <div class="corporate__head_logo">
+              <img src="images/logo.png"
+                   srcset="images/logo@2x.png 2x,
+                           images/logo@3x.png 3x">
+            </div>
+            <div class="corporate__head__nav">
+              <label class="corporate__head__nav_menu-togler">
+                <input id="menu" type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+              <div class="corporate__head__nav_inner">
+                <a class="corporate__head__nav_item" href="#!">Home</a>
+                <span class="corporate__head__nav_item has-submenu" href="#!">Programs
+                  <span class="corporate__head__nav_submenu">
+                    <a href="#!" class="corporate__head__nav_submenu_item">Food Management</a>
+                    <a href="#!" class="corporate__head__nav_submenu_item">Maintain</a>
+                    <a href="#!" class="corporate__head__nav_submenu_item">Custom Nutrition</a>
+                    <a href="#!" class="corporate__head__nav_submenu_item">Managed Plan</a>
+                  </span>
+                </span>
+                <a class="corporate__head__nav_item" href="#!">Supplements</a>
+                <a class="corporate__head__nav_item" href="#!">Blog</a>
+                <a class="corporate__head__nav_item" href="#!">About</a>
+                <a class="corporate__head__nav_item" href="#!">Contact</a>
+              </div>
+              <a class="corporate__head__nav_btn" href="#!"><i>
+                <img src="images/user.png"
+                     srcset="images/user@2x.png 2x,
+                             images/user@3x.png 3x">
+              </i>Log in</a>
+            </div>
+          </div>
+        </div>
+      </header>
 
       <section>
         <div class="corporate__bcg-1">
@@ -417,12 +486,96 @@
         </div>
       </section>
 
-
       <section>
         <div class="corporate__bcg-8">
-          @@include('./bcg-8.html')
-          @@include('./bcg-8-sky.html')
+          <div class="corporate__bcg-8_img-list">
+            <img src="images/happy-people.png"
+                 srcset="images/happy-people@2x.png 2x,
+                         images/happy-people@3x.png 3x">
+          </div>
+          <div class="corporate__bcg-8__sky">
+            <h3 class="corporate__bcg-8__sky_title">Now is your time to become a success story!</h3>
+            <p class="corporate__bcg-8__sky_text">Click the button below to get your<br>personal nutrition system, G-Plans.</p>
+            <a href="#!" class="custom-button-orange">See your tailored program now</a>
+          </div>
         </div>
       </section>
 
-    @@include('./footer.html')
+    </main>
+
+    
+
+    <footer>
+      <div class="corporate__footer">
+        <div class="corporate__footer__grid">
+          <div class="corporate__footer__grid_item">
+            <h4 class="corporate__footer__grid_title">Goglia Nutrition © 2018</h4>
+            <div class="corporate__footer__grid_content">
+              <p>All trademarks, products, and service names are the property of their respective owners." and copy right 2018.</p>
+            </div>
+          </div>
+          <div class="corporate__footer__grid_item">
+            <h4 class="corporate__footer__grid_title">Site Navigation</h4>
+            <div class="corporate__footer__grid_content">
+              <p><a href="#!" target="_blank">Shop</a></p>
+              <p><a href="#!" target="_blank">Terms Of Service</a></p>
+              <p><a href="#!" target="_blank">Privacy Policy</a></p>
+              <p><a href="#!" target="_blank">Business & Press Inquires</a></p>
+              <p><a href="#!" target="_blank">Contact</a></p>
+            </div>
+          </div>
+          <div class="corporate__footer__grid_item">
+            <h4 class="corporate__footer__grid_title">Help Center</h4>
+            <div class="corporate__footer__grid_content">
+              <a href="#!" target="_blank">Frequently asked questions
+              Trouble logging in?
+              General help center</a>
+            </div>
+          </div>
+          <div class="corporate__footer__grid_item">
+            <h4 class="corporate__footer__grid_title">Support</h4>
+            <div class="corporate__footer__grid_content">
+              <a href="mailto:support@g-plans.com" target="_blank">support@g-plans.com</a>
+            </div>
+          </div>
+          <div class="corporate__footer__grid_bottom">
+            <p>*Results vary based on starting weight and program adherence. Inches lost from hips, waist, chest, thighs and arms in first month. These users exercised daily and ate a reduced-calorie diet. Their fat loss is not typical.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/closest/closest.js"></script>
+    <script src="/bower_components/raf.js/raf.js"></script>
+    <script src="/bower_components/object-fit/dist/polyfill.object-fit.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.6/SmoothScroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.10/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.10/jquery.hammer.js"></script>
+
+    <script>
+      objectFit.polyfill({
+        selector: 'img', // this can be any CSS selector
+        fittype: 'cover', // either contain, cover, fill or none
+        disableCrossDomain: 'true' // either 'true' or 'false' to not parse external CSS files.
+      });
+    </script>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+
+  </body>
+</html>
