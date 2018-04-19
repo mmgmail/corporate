@@ -1830,6 +1830,10 @@ textarea.bcg-custom-field {
     display: flex;
     width: 100%;
     justify-content: center;
+
+    @include small() {
+      flex-direction: column;
+    }
   }
 
   &__phone {
@@ -1887,7 +1891,23 @@ textarea.bcg-custom-field {
   }
 }
 
+/*** Bcg-programs-maintain ***/
 
+.bcg-programs-maintain {
+  position: relative;
+  z-index: 1;
+
+  &__col {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #ecf5fe;
+
+    @include small() {
+      flex-direction: column;
+    }
+  }
+}
 
 /*** Footer ***/
 
