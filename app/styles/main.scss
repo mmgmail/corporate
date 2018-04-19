@@ -1901,6 +1901,10 @@ textarea.bcg-custom-field {
   position: relative;
   z-index: 1;
 
+  .svg-triangle {
+    height: 200px;
+  }
+
   &__col {
     display: flex;
     width: 100%;
@@ -2099,7 +2103,45 @@ textarea.bcg-custom-field {
 /*** Bcg-programs-nutrinion ***/
 
 .bcg-programs-nutrinion {
+  padding: 200px 15px 100px;
+  background-image: linear-gradient(45deg, $dodger-blue 65%, rgb(57, 238, 255));
+  position: relative;
+  z-index: 0;
+  margin-top: -200px;
 
+  &__col {
+    display: flex;
+    justify-content: center;
+
+    &_photo {
+      padding-right: 90px;
+    }
+
+    &_list {
+      max-width: 610px;
+      width: 100%;
+    }
+  }
+
+  .bcg-programs-manage__list_descr,
+  .bcg-programs-manage__list_title {
+    color: #fff;
+  }
+}
+
+.bcg-programs-nutrinion-sublist.corporate__bcg-6__list {
+  margin: 50px 0 55px;
+
+  .corporate__bcg-6__list_item {
+    font-size: 18px;
+    color: #fff;
+
+    &:before {
+      width: 8px;
+      height: 15px;
+      border-color: #fff;
+    }
+  }
 }
 
 /*** Bcg-programs-plan ***/
