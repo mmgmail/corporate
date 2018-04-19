@@ -1583,7 +1583,7 @@ textarea.bcg-custom-field {
 
   @include small() {
     min-height: auto;
-    
+
     .custom-page-title {
       margin-top: 0px;
     }
@@ -1791,6 +1791,103 @@ textarea.bcg-custom-field {
     display: none;
   }
 }
+
+/*** Bcg-programs-manage ***/
+
+.mango-badge {
+  &__wrap {
+    margin: 20px 0;
+  }
+
+  &__item {
+    display: inline-block;
+    border-radius: 14px;
+    background-color: $white;
+    border: solid 2px $mango;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: 4.8px;
+    text-align: left;
+    color: $mango;
+    padding: 4px 10px 3px 16px;
+    text-transform: uppercase;
+    user-select: none;
+    text-align: center;
+  }
+}
+
+.bcg-programs-manage {
+  width: 100%;
+  padding: 0 15px 50px;
+  .bcg-about-members__head_title {
+    text-align: center;
+    margin: 70px auto;
+  }
+
+  &__col {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__phone {
+    padding-right: 65px;
+  }
+
+  &__list {
+    max-width: 540px;
+
+    &_title {
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.23;
+      letter-spacing: normal;
+      text-align: left;
+      color: $black-three;
+      margin: 0 0 10px 0;
+      padding: 0;
+    }
+
+    &_descr {
+      font-family: 'SanFranciscoText';
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      text-align: left;
+      color: $slate;
+    }
+  }
+
+  &__items {
+    margin: 40px 0;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    &_icon {
+      min-width: 65px;
+      width: 65px;
+    }
+  }
+
+  .custom-button-orange {
+    margin: 70px 0 20px;
+  }
+
+  @include small() {
+    flex-direction: column;
+  }
+}
+
+
 
 /*** Footer ***/
 
