@@ -370,6 +370,10 @@ body {
       align-items: center;
       @include abs;
 		top: 60px;
+		.iphone_cont {
+			width: 470px;
+			margin-top: 20px;
+		}
 
       &_phone {
         opacity: 0;
@@ -2512,7 +2516,14 @@ textarea.bcg-custom-field {
   .corporate__bcg-2__products_title,
   .corporate__bcg-2__started_item_title {
     font-size: 24px;
+	  padding-top: 20px;
+	  max-height: 40px;
   }
+	.corporate__bcg-2__started_info a {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
   .corporate__bcg-2__products_text,
   .corporate__bcg-2__started_item_text {
@@ -2645,6 +2656,13 @@ textarea.bcg-custom-field {
 }
 
 @include media(767) {
+	.mobile_hide {
+		display: none;
+	}
+	.scrollmagic-pin-spacer {
+		position: fixed !important;
+		z-index: 900;
+	}
   .corporate__head__nav_btn {
     width: 37px;
     min-width: 37px;
@@ -2703,7 +2721,7 @@ textarea.bcg-custom-field {
   }
 
   .corporate__bcg-1 {
-    margin-top: 30px;
+    margin-top: 0;
   }
 
   .corporate__bcg-1__inner_phone {
@@ -2711,16 +2729,21 @@ textarea.bcg-custom-field {
   }
 
   .corporate__bcg-1 {
-    min-height: 550px;
+    min-height: 580px;
   }
+	.corporate__bcg-1__inner {
+		top: 0;
+	}
 
   .corporate__bcg-1__inner_title {
-    font-size: 28px;
+	  font-size: 22px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .corporate__bcg-1__inner_subtitle {
     margin-bottom: 30px;
+	  font-size: 14px;
   }
 
   .corporate__bcg-2_brands {
@@ -2759,6 +2782,9 @@ textarea.bcg-custom-field {
   .corporate__bcg-4__info_title, .corporate__bcg-5_title, .corporate__bcg-2__started_info-title {
     font-size: 25px;
   }
+	.corporate__bcg-4__info.info-helper {
+		padding-bottom: 80px;
+	}
 
   .corporate__bcg-2__started_info-title {
     margin-bottom: 40px;
@@ -2777,6 +2803,9 @@ textarea.bcg-custom-field {
     align-items: center;
     text-align: center;
   }
+	.corporate__bcg-2__started_info-title {
+		line-height: normal;
+	}
 
   .corporate__bcg-2__started_item_title,
   .corporate__bcg-2__products_text, .corporate__bcg-2__started_item_text {
