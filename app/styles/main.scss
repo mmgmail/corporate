@@ -222,6 +222,7 @@ body {
         color: $black-three;
         display: inline-block;
         opacity: 0;
+		font-family: "Europa", sans-serif;
 
         &.has-submenu {
           position: relative;
@@ -232,7 +233,7 @@ body {
           &:before {
             content: '';
             position: absolute;
-            top: 6px;
+            top: 8px;
             right: 0;
             width: 0;
             height: 0;
@@ -343,8 +344,8 @@ body {
 
     &_vegies {
       @include abs;
-      width: 100%;
-      height: 100%;
+      min-width: 100%;
+      height: auto;
       object-fit: cover;
       object-position: center;
       opacity: 0;
@@ -363,6 +364,7 @@ body {
       }
 
       &_title {
+		font-family: "Europa", sans-serif;
         font-size: 50px;
         font-weight: bold;
         text-align: center;
