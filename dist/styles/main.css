@@ -142,7 +142,7 @@ body {
   border-radius: 35px;
   background-image: linear-gradient(20deg, #ff7a09, #fbce59);
   box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.2);
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: bold;
   text-align: center;
   color: white;
@@ -177,7 +177,7 @@ body {
   position: relative;
   display: inline-block;
   padding-bottom: 15px;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   color: black;
   line-height: 1;
@@ -356,7 +356,7 @@ body {
   background-image: linear-gradient(45deg, #4da0ff, #39eeff);
   color: #fff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-  font-size: 16px;
+  font-size: 1rem;
   display: block;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: scale(0);
@@ -387,7 +387,7 @@ body {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   color: white;
   text-shadow: 0px 2px 0 rgba(0, 0, 0, 0.1);
@@ -478,7 +478,7 @@ body {
 }
 
 .corporate__bcg-1__inner_title {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: bold;
   text-align: center;
   color: black;
@@ -487,7 +487,7 @@ body {
 }
 
 .corporate__bcg-1__inner_subtitle {
-  font-size: 22px;
+  font-size: 1.375rem;
   text-align: center;
   color: #6a7688;
   margin-bottom: 50px;
@@ -596,7 +596,7 @@ body {
 }
 
 .corporate__bcg-2__products_title {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
   color: black;
   text-align: center;
@@ -606,7 +606,7 @@ body {
 
 .corporate__bcg-2__products_text {
   text-align: center;
-  font-size: 22px;
+  font-size: 1.375rem;
   color: #6c6c6c;
   font-family: "SanFranciscoText";
 }
@@ -649,7 +649,7 @@ body {
 }
 
 .corporate__bcg-2__started_info-title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: left;
   color: black;
@@ -674,7 +674,7 @@ body {
 }
 
 .corporate__bcg-2__started_item_title {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: bold;
   text-align: left;
   color: black;
@@ -682,7 +682,7 @@ body {
 }
 
 .corporate__bcg-2__started_item_text {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 1.52;
   text-align: left;
   color: #4a5665;
@@ -739,7 +739,7 @@ body {
 
 .corporate__bcg-3_title {
   margin: -15px auto 20px;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: normal;
@@ -748,7 +748,7 @@ body {
 }
 
 .corporate__bcg-3_subtitle {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -804,7 +804,7 @@ body {
 }
 
 .corporate__bcg-3__sky_title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   color: white;
@@ -812,7 +812,7 @@ body {
 }
 
 .corporate__bcg-3__sky_text {
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -907,7 +907,7 @@ body {
 }
 
 .corporate__bcg-4__info_title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: normal;
@@ -917,7 +917,7 @@ body {
 }
 
 .corporate__bcg-4__info_text {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -997,7 +997,7 @@ body {
 .polaroid-images__item:after {
   content: attr(title);
   font-family: ArtySignature;
-  font-size: 80px;
+  font-size: 5rem;
   color: black;
   position: absolute;
   bottom: 0;
@@ -1119,7 +1119,7 @@ body {
 }
 
 .corporate__bcg-5_title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: normal;
@@ -1129,7 +1129,7 @@ body {
 }
 
 .corporate__bcg-5_text {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -1203,7 +1203,7 @@ body {
 }
 
 .corporate__bcg-5__info_icon {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: black;
   height: 55px;
@@ -1211,10 +1211,10 @@ body {
 }
 
 .corporate__bcg-5__info_note {
-  font-size: 8px;
+  font-size: 0.5rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1.6px;
+  letter-spacing: 0.1rem;
   text-align: left;
   color: black;
   text-transform: uppercase;
@@ -1231,14 +1231,14 @@ body {
 }
 
 .corporate__bcg-5__info__list_title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   line-height: 1.67;
   color: black;
 }
 
 .corporate__bcg-5__info__list_item {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.88;
   color: black;
   padding-left: 5px;
@@ -1292,7 +1292,7 @@ body {
 }
 
 .corporate__bcg-6_title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: normal;
@@ -1302,7 +1302,7 @@ body {
 }
 
 .corporate__bcg-6_text {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.67;
   letter-spacing: normal;
   text-align: center;
@@ -1320,12 +1320,12 @@ body {
 .corporate__bcg-6__list_item {
   padding-left: 25px;
   position: relative;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: left;
   color: black;
   margin-bottom: 20px;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 .corporate__bcg-6__list_item:before {
@@ -1399,14 +1399,14 @@ body {
 }
 
 .corporate__bcg-7__users_name {
-  font-size: 29.5px;
+  font-size: 1.84375rem;
   font-weight: bold;
   color: black;
   margin: 25px auto 10px;
 }
 
 .corporate__bcg-7__users_lost {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   color: #9aa8bb;
   display: -ms-flexbox;
@@ -1420,7 +1420,7 @@ body {
 }
 
 .corporate__bcg-7__users_note {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.67;
   color: #707070;
   margin-top: 15px;
@@ -1455,14 +1455,14 @@ body {
 }
 
 .corporate__bcg-8__sky_title {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
   color: white;
   margin: 0 auto 20px;
 }
 
 .corporate__bcg-8__sky_text {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.25;
   color: white;
@@ -1471,7 +1471,7 @@ body {
 
 .corporate__bcg-8__sky .custom-button-orange {
   max-width: 345px;
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 100%;
   height: 58px;
 }
@@ -1487,7 +1487,7 @@ body {
 .custom-page-title {
   margin: 20px 0 25px;
   padding: 0;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: normal;
@@ -1498,14 +1498,14 @@ body {
 @media only screen and (max-width: 767px) {
   .custom-page-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
   }
 }
 
 .custom-page-description {
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -1562,34 +1562,34 @@ body {
   background-color: white;
   border: solid 2px #9aa8bb;
   padding: 15px;
-  font-size: 16px;
+  font-size: 1rem;
   outline: none;
   transiton: border-color 0.3s;
 }
 
 .bcg-custom-field::-webkit-input-placeholder {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: left;
   color: #9aa8bb;
 }
 
 .bcg-custom-field:-moz-placeholder {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: left;
   color: #9aa8bb;
 }
 
 .bcg-custom-field::-moz-placeholder {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: left;
   color: #9aa8bb;
 }
 
 .bcg-custom-field:-ms-input-placeholder {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: left;
   color: #9aa8bb;
@@ -1670,7 +1670,7 @@ textarea.bcg-custom-field {
 }
 
 .bcg-contact-from__groups_title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -1702,7 +1702,7 @@ textarea.bcg-custom-field {
   width: 175px;
   height: 45px;
   border: none;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1720,7 +1720,7 @@ textarea.bcg-custom-field {
 .bcg-contact-from__info_title {
   padding: 0;
   margin: 0 0 45px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: left;
   color: #184e88;
@@ -1735,7 +1735,7 @@ textarea.bcg-custom-field {
 .bcg-contact-from__info_sub-title {
   padding: 0;
   margin: 0 0 10px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   text-align: left;
   color: #184e88;
@@ -1749,7 +1749,7 @@ textarea.bcg-custom-field {
 }
 
 .bcg-contact-from__info_link {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -1766,7 +1766,7 @@ textarea.bcg-custom-field {
 .bcg-contact-from__info_tel-title {
   padding: 0;
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   text-align: left;
   color: white;
@@ -1822,7 +1822,7 @@ textarea.bcg-custom-field {
   -ms-flex-align: center;
       align-items: center;
   margin-top: 55px;
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: bold;
   color: #bebebe;
   transition: all 0.3s;
@@ -1841,7 +1841,7 @@ textarea.bcg-custom-field {
 @media only screen and (max-width: 767px) {
   .custom-page-description-button {
     height: 50px;
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 30px auto 10px;
   }
 }
@@ -1874,7 +1874,7 @@ textarea.bcg-custom-field {
 }
 
 .bcg-about-members__head_title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1;
   color: black;
@@ -1885,12 +1885,12 @@ textarea.bcg-custom-field {
 
 @media only screen and (max-width: 767px) {
   .bcg-about-members__head_title {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 }
 
 .bcg-about-members__head_subtitle {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: bold;
   line-height: 1.23;
   color: #7f7f7f;
@@ -1899,7 +1899,7 @@ textarea.bcg-custom-field {
 
 @media only screen and (max-width: 767px) {
   .bcg-about-members__head_subtitle {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin-top: 15px;
   }
 }
@@ -1946,7 +1946,7 @@ textarea.bcg-custom-field {
 }
 
 .team-grid__item_name {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   text-align: left;
   color: #4da0ff;
@@ -1954,7 +1954,7 @@ textarea.bcg-custom-field {
 }
 
 .team-grid__item_post {
-  font-size: 16px;
+  font-size: 1rem;
   text-align: left;
   color: #4a5665;
   font-family: "SanFranciscoText";
@@ -2024,7 +2024,7 @@ textarea.bcg-custom-field {
 }
 
 .located-title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   text-align: center;
   color: black;
@@ -2053,11 +2053,11 @@ textarea.bcg-custom-field {
   border-radius: 14px;
   background-color: white;
   border: solid 2px #ff8c2b;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: 4.8px;
+  letter-spacing: 0.3rem;
   text-align: left;
   color: #ff8c2b;
   padding: 4px 10px 3px 16px;
@@ -2113,7 +2113,7 @@ textarea.bcg-custom-field {
 }
 
 .bcg-programs-manage__list_title {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: bold;
   line-height: 1.23;
   letter-spacing: normal;
@@ -2125,7 +2125,7 @@ textarea.bcg-custom-field {
 
 .bcg-programs-manage__list_descr {
   font-family: 'SanFranciscoText';
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2245,7 +2245,7 @@ textarea.bcg-custom-field {
 
 .bcg-programs-sublist.corporate__bcg-6__list .corporate__bcg-6__list_item {
   color: #4da0ff;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .bcg-programs-sublist.corporate__bcg-6__list .corporate__bcg-6__list_item:before {
@@ -2287,7 +2287,7 @@ textarea.bcg-custom-field {
 }
 
 .bcg-programs-items__item_title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   text-align: left;
   color: #4a5665;
@@ -2302,7 +2302,7 @@ textarea.bcg-custom-field {
 
 .bcg-programs-items__item_text {
   font-family: 'SanFranciscoText';
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.63;
   text-align: left;
   color: #4a5665;
@@ -2346,7 +2346,7 @@ textarea.bcg-custom-field {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   color: #bebebe;
   transition: all 0.3s;
@@ -2394,7 +2394,7 @@ textarea.bcg-custom-field {
 }
 
 .maintan-board__note_title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   text-align: left;
   color: #4a5665;
@@ -2403,7 +2403,7 @@ textarea.bcg-custom-field {
 
 .maintan-board__note_text {
   font-family: 'SanFranciscoText';
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.63;
   text-align: left;
   color: #4a5665;
@@ -2439,7 +2439,7 @@ textarea.bcg-custom-field {
 .maintan-board__kit_link span {
   margin-top: 10px;
   font-family: 'SanFranciscoText';
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2513,7 +2513,7 @@ textarea.bcg-custom-field {
 }
 
 .bcg-programs-nutrinion-sublist.corporate__bcg-6__list .corporate__bcg-6__list_item {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fff;
 }
 
@@ -2533,7 +2533,7 @@ textarea.bcg-custom-field {
 .bcg-programs-plan__head_title {
   margin: 0;
   padding: 0;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: normal;
@@ -2552,7 +2552,7 @@ textarea.bcg-custom-field {
     padding: 0 15px;
   }
   .bcg-programs-plan__head_title {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 }
 
@@ -2583,7 +2583,7 @@ textarea.bcg-custom-field {
 }
 
 .bcg-programs-plan__col_title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   text-align: left;
   color: #4a5665;
@@ -2592,7 +2592,7 @@ textarea.bcg-custom-field {
 
 .bcg-programs-plan__col_text {
   font-family: 'SanFranciscoText';
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.44;
   text-align: left;
   color: #4a5665;
@@ -2617,7 +2617,7 @@ textarea.bcg-custom-field {
 }
 
 .bcg-programs-plan__benefits_title {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: bold;
   color: black;
   margin: 0;
@@ -2647,7 +2647,7 @@ textarea.bcg-custom-field {
 }
 
 .bcg-programs-plan__benefits_item span {
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-weight: bold;
   text-align: center;
   color: #4da0ff;
@@ -2696,7 +2696,7 @@ textarea.bcg-custom-field {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "SanFranciscoText";
   font-weight: normal;
   font-style: normal;
@@ -2749,7 +2749,7 @@ textarea.bcg-custom-field {
 
 @media only screen and (max-width: 1400px) {
   .corporate__bcg-5_title {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
 }
 
@@ -2757,19 +2757,19 @@ textarea.bcg-custom-field {
   .corporate__bcg-4__info_title,
   .corporate__bcg-5_title,
   .corporate__bcg-2__started_info-title {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   .corporate__bcg-2__products_title,
   .corporate__bcg-2__started_item_title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .corporate__bcg-2__products_text,
   .corporate__bcg-2__started_item_text {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .corporate__bcg-5_text,
   .corporate__bcg-4__info_text {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .corporate__bcg-2__started_info {
     max-width: 470px;
@@ -2797,26 +2797,26 @@ textarea.bcg-custom-field {
     margin: 30px 0;
   }
   .corporate__bcg-3__sky_title {
-    font-size: 20px;
+    font-size: 1.25rem;
     min-height: 35px;
   }
   .corporate__bcg-3__sky_text,
   .corporate__bcg-6_text,
   .corporate__bcg-6__list_item {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .corporate__bcg-3_title,
   .corporate__bcg-6_title {
-    font-size: 32px;
+    font-size: 2rem;
   }
   .corporate__bcg-6_text {
     margin-bottom: 20px;
   }
   .corporate__bcg-1__inner_title {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   .corporate__bcg-1__inner_subtitle {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 
@@ -2829,10 +2829,10 @@ textarea.bcg-custom-field {
   .custom-button-orange {
     height: 50px;
     min-height: 50px;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .corporate__head__nav_item {
-    font-size: 15px;
+    font-size: 0.9375rem;
   }
   .corporate__bcg-6_right {
     -ms-flex-align: end;
@@ -2842,13 +2842,13 @@ textarea.bcg-custom-field {
     min-height: 40px;
   }
   .corporate__footer__grid {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .corporate__bcg-8__sky {
     padding: 30px 15px;
   }
   .corporate__bcg-7__users_note {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .polaroid-images__item {
     padding: 15px 15px 90px;
@@ -2860,7 +2860,7 @@ textarea.bcg-custom-field {
     bottom: 90px;
   }
   .polaroid-images__item:after {
-    font-size: 70px;
+    font-size: 4.375rem;
     height: 90px;
   }
   .corporate__bcg-3_img-list {
@@ -2898,7 +2898,7 @@ textarea.bcg-custom-field {
     display: none;
   }
   .corporate__head__nav_item {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #fff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
@@ -2933,7 +2933,7 @@ textarea.bcg-custom-field {
     min-height: 550px;
   }
   .corporate__bcg-1__inner_title {
-    font-size: 28px;
+    font-size: 1.75rem;
     margin-bottom: 20px;
   }
   .corporate__bcg-1__inner_subtitle {
@@ -2968,7 +2968,7 @@ textarea.bcg-custom-field {
     display: none;
   }
   .corporate__bcg-4__info_title, .corporate__bcg-5_title, .corporate__bcg-2__started_info-title {
-    font-size: 25px;
+    font-size: 1.5625rem;
   }
   .corporate__bcg-2__started_info-title {
     margin-bottom: 40px;
@@ -3048,10 +3048,10 @@ textarea.bcg-custom-field {
     padding: 0 15px;
   }
   .corporate__bcg-3_subtitle {
-    font-size: 16px;
+    font-size: 1rem;
   }
   .corporate__bcg-3_title, .corporate__bcg-6_title {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   .corporate__bcg-4 {
     margin-top: -30px;
@@ -3112,14 +3112,14 @@ textarea.bcg-custom-field {
     padding: 35px 15px;
   }
   .corporate__bcg-8__sky_title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   .corporate__bcg-8__sky_text {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .corporate__bcg-8__sky .custom-button-orange {
     max-width: 300px;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   .corporate__bcg-7 {
     padding-bottom: 40px;

@@ -8,6 +8,7 @@ const runSequence = require('run-sequence');
 const fontgen = require('gulp-fontgen');
 const concat = require('gulp-concat');
 const fileinclude = require('gulp-file-include');
+const pxtorem = require('gulp-pxtorem');
 
 gulp.task('fileinclude', function() {
   gulp.src(['app/*.html'])
@@ -49,6 +50,7 @@ gulp.task('styles', () => {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer({browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']}))
     .pipe($.if(dev, $.sourcemaps.write()))
+    .pipe(pxtorem())
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(reload({stream: true}));
 });
@@ -104,7 +106,7 @@ gulp.task('html', ['styles', 'scripts'], () => {
 
 gulp.task('images', () => {
   return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin()))
+    //.pipe($.cache($.imagemin()))
     .pipe(gulp.dest('dist/images'));
 });
 
