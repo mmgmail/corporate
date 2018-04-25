@@ -57,6 +57,13 @@ body {
   background-color: $white;
 }
 
+.mobile_hidden {
+	display: block;
+}
+.mobile_show {
+	display: none;
+}
+
 .corporate {
   flex: 1 0 auto;
 }
@@ -2683,6 +2690,9 @@ textarea.bcg-custom-field {
 	.mobile_hide {
 		display: none;
 	}
+	.mobile_show {
+		display: block;
+	}
 	.scrollmagic-pin-spacer {
 		position: fixed !important;
 		z-index: 900;
@@ -2758,6 +2768,9 @@ textarea.bcg-custom-field {
 		position: absolute;
 	}
 
+	.corporate__bcg-1__inner .iphone_cont {
+		width: 100%;
+	}
   .corporate__bcg-1__inner_phone {
     max-height: 300px;
   }
@@ -2798,7 +2811,12 @@ textarea.bcg-custom-field {
     height: auto;
     margin-bottom: 15px;
   }
-
+	.corporate__bcg-2__started .mobile_phone_boxes {
+		position: absolute;
+    top: -60px;
+    width: 100%;
+    left: 0;
+	}
   .corporate__bcg-2__started_info {
     max-width: none;
     width: 100%;
@@ -2807,6 +2825,7 @@ textarea.bcg-custom-field {
   .corporate__bcg-2__started_inner {
     max-width: 100%;
     flex-direction: column;
+	  padding-top: 220px;
   }
 
   .corporate__bcg-2__started_images {
@@ -2876,7 +2895,7 @@ textarea.bcg-custom-field {
 
   .corporate__bcg-3__sky_inner {
     flex-direction: column;
-    padding: 300px 0;
+    padding: 200px 0 300px 0;
     width: 100%;
   }
 
@@ -2896,7 +2915,10 @@ textarea.bcg-custom-field {
 	}
 	.corporate__bcg-3__sky_text, .corporate__bcg-6_text, .corporate__bcg-6__list_item {
 		margin: 0 20px;
-		padding-bottom: 0;
+		padding-bottom: 20px;
+	}
+	.corporate__bcg-6_text {
+		padding-bottom: 40px;
 	}
   .svg-shape {
     width: 200%;
@@ -2906,7 +2928,9 @@ textarea.bcg-custom-field {
     margin-top: -200px;
     overflow: hidden;
   }
-
+	.mobile_app_screens {
+		margin-top: 40px;
+	}
   .corporate__bcg-4__grid {
     flex-direction: column;
     overflow: hidden;
@@ -2917,7 +2941,9 @@ textarea.bcg-custom-field {
   }
 
   .corporate__bcg-4__grid_clip {
-    padding: 0 15px 30px;
+    padding: 160px 15px 30px 15px;
+	  background: url("../images/marble.png");
+	  background-position: bottom center;
   }
 
   .corporate__bcg-3_title,
@@ -2934,7 +2960,7 @@ textarea.bcg-custom-field {
   }
 
   .corporate__bcg-4 {
-    margin-top: -30px;
+    margin-top: -230px;
   }
 
   .corporate__bcg-4__grid_fill {
@@ -2970,12 +2996,14 @@ textarea.bcg-custom-field {
   }
 
   .corporate__bcg-6_right {
-    order: 0;
+    order: 2;
     margin-bottom: 20px;
+	  padding-top: 60px;
   }
 
   .corporate__bcg-6 .svg-triangle.triangle-top {
-    display: none;
+    display: block;
+	  margin-top: -100px;
   }
 
   .corporate__bcg-7__users {
@@ -2988,6 +3016,9 @@ textarea.bcg-custom-field {
       margin-top: 45px;
     }
   }
+	.corporate__bcg-7__users_name {
+		font-size: 20px;
+	}
 
   .corporate__footer__grid {
     flex-direction: column;
@@ -3059,5 +3090,8 @@ textarea.bcg-custom-field {
     margin-top: -15vw;
     height: 15vw;
   }
-
+.corporate__footer__grid_title {
+    height: 30px;
+    margin-top: 20px;
+}
 }
