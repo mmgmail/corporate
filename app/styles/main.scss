@@ -9,6 +9,15 @@ html, body {
   margin: 0;
 }
 
+/* Fixes overflow of absolute elements */
+body {
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+	font-family: "Europa", sans-serif;
+}
+
 p {
   margin: 0;
 }
@@ -53,6 +62,13 @@ body {
   background-color: $white;
 }
 
+.mobile_hidden {
+	display: block;
+}
+.mobile_show {
+	display: none;
+}
+
 .corporate {
   flex: 1 0 auto;
 }
@@ -60,9 +76,11 @@ body {
 .custom-button-orange {
   width: 274px;
   height: 70px;
-  border-radius: 35px;
-  background-image: linear-gradient(20deg, $pumpkin-orange, rgb(251, 206, 89));
-  box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.2);
+  background: rgb(251,206,89);
+    background: linear-gradient(190deg, rgba(251,206,89,1) 0%, rgba(255,122,9,1) 100%);
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.5s ease;
   font-size: 21px;
   font-weight: bold;
   text-align: center;
@@ -70,6 +88,7 @@ body {
   display: flex;
   @include fcenter;
   line-height: 1;
+	font-family: "Europa", sans-serif;
 
   &:active {
     transform: translateY(2px);
@@ -77,7 +96,11 @@ body {
   }
 
   &:hover {
-    background-image: linear-gradient(50deg, rgb(251, 206, 89), $pumpkin-orange);
+    background: rgb(255,246,146);
+    background: linear-gradient(190deg, rgba(255,246,146,1) 0%, rgba(255,137,36,1) 100%);
+    text-decoration: none;
+    transform: translateY(-4px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
   }
 }
 
@@ -130,8 +153,8 @@ body {
 .corporate__head_fixed {
   z-index: 999;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 75%,rgba(255,255,255,0) 100%);
-  min-height: 80px;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%);
+  min-height: 100px;
 }
 
 .corporate {
@@ -222,6 +245,7 @@ body {
         color: $black-three;
         display: inline-block;
         opacity: 0;
+		font-family: "Europa", sans-serif;
 
         &.has-submenu {
           position: relative;
@@ -232,7 +256,7 @@ body {
           &:before {
             content: '';
             position: absolute;
-            top: 6px;
+            top: 8px;
             right: 0;
             width: 0;
             height: 0;
@@ -289,8 +313,12 @@ body {
         width: 121px;
         min-width: 121px;
         height: 34px;
-        border-radius: 17px;
-        background-image: linear-gradient(45deg, $dodger-blue, rgb(57, 238, 255));
+		  font-family: "Europa", sans-serif;
+          background: rgb(57,238,255);
+		background: linear-gradient(190deg, rgba(57,238,255,1) 0%, rgba(77,160,255,1) 100%);
+		border-radius: 50px;
+		box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+		transition: all 0.5s ease;
         display: flex;
         align-items: center;
         font-size: 16px;
@@ -315,7 +343,11 @@ body {
         }
 
         &:hover {
-          background-image: linear-gradient(45deg, rgb(57, 238, 255), $dodger-blue);
+            background: rgb(115,255,246);
+		background: linear-gradient(190deg, rgba(115,255,246,1) 0%, rgba(113,179,255,1) 100%);
+		text-decoration: none;
+		transform: translateY(-2px);
+		box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
       }
     }
@@ -343,8 +375,8 @@ body {
 
     &_vegies {
       @include abs;
-      width: 100%;
-      height: 100%;
+      min-width: 100%;
+      height: auto;
       object-fit: cover;
       object-position: center;
       opacity: 0;
@@ -357,12 +389,18 @@ body {
       justify-content: flex-end;
       align-items: center;
       @include abs;
+		top: 60px;
+		.iphone_cont {
+			width: 470px;
+			margin-top: 20px;
+		}
 
       &_phone {
         opacity: 0;
       }
 
       &_title {
+		font-family: "Europa", sans-serif;
         font-size: 50px;
         font-weight: bold;
         text-align: center;
@@ -469,6 +507,9 @@ body {
 
       &_icon {
         height: 115px;
+		  img {
+			  width: 96px;
+		  }
       }
 
       &_title {
@@ -482,7 +523,7 @@ body {
 
       &_text {
         text-align: center;
-        font-size: 22px;
+        font-size: 20px;
         color: $brownish-grey-two;
         font-family: "SanFranciscoText";
       }
@@ -515,6 +556,22 @@ body {
       &_info {
         max-width: 550px;
         width: 100%;
+		  
+		  a {
+			  font-size: 20px;
+			  display: inline-block;
+			  margin-top: 60px;
+			  color: $dodger-blue;
+			  img {
+				  display: inline-block;
+					width: 18px;
+					top: 2px;
+					position: relative;
+			  }
+		  }
+		  a:hover {
+			  text-decoration: underline;
+		  }
       }
 
       &_media {
@@ -523,6 +580,7 @@ body {
 
       &_info-title {
         font-size: 40px;
+		  line-height: 50px;
         font-weight: bold;
         text-align: left;
         color: $black-three;
@@ -531,6 +589,10 @@ body {
 
       &_item {
         display: flex;
+		 
+		  img {
+			  width: 90px;
+		  }
 
         & + & {
           margin-top: 90px;
@@ -550,6 +612,7 @@ body {
           text-align: left;
           color: $black-three;
           margin-bottom: 15px;
+			margin-top: 0;
         }
 
         &_text {
@@ -661,7 +724,10 @@ body {
       }
 
       &_icon {
-        height: 135px;
+        height: 100px;
+		  img {
+			  width: 100px;
+		  }
       }
 
       &_title {
@@ -670,6 +736,7 @@ body {
         text-align: center;
         color: $white;
         min-height: 50px;
+		  margin-bottom: 0;
       }
 
       &_text {
@@ -682,6 +749,7 @@ body {
         text-align: center;
         color: $white;
         font-family: "SanFranciscoText";
+		  padding-bottom: 40px;
       }
 
       &_divider {
@@ -727,26 +795,25 @@ body {
         position: relative;
         background: #fff;
         z-index: 0;
-        &:before {
-          content: '';
-          @include abs;
-          background: #fff;
-          opacity: 0.4;
-          z-index: 1;
-        }
-        img {
-          width: 100%;
-          height: 115%;
+		  overflow: hidden;
+		  max-height: 730px;
+        
+        .marble_bg {
+          width: auto;
+          height: auto;
           object-fit: cover;
           max-width: none;
           position: relative;
           z-index: 1;
+			max-width: none;
+			top: -40px;
         }
+
       }
     }
 
     &__info {
-      max-width: 75%;
+      max-width: 65%;
 
       &.info-helper {
         margin-top: -8vw;
@@ -918,6 +985,23 @@ body {
       opacity: 1;
     }
   }
+}
+
+/*** FLOATING IPADS ***/
+.floating_ipads_cont {
+	height: 0px;
+	width: 100%;
+	position: relative;
+	
+	.floating_ipads {
+          width: auto;
+          height: auto;
+          position: absolute;
+          z-index: 100;
+			bottom: -30px;
+			left: 50%;
+		margin-left: 110px;
+        }
 }
 
 /*** Bcg-5 ***/
@@ -1128,6 +1212,7 @@ body {
       text-align: center;
       color: $black-three;
       margin-bottom: 20px;
+		margin-top: 0;
     }
 
     &_text {
@@ -1148,7 +1233,7 @@ body {
       &_item {
         padding-left: 25px;
         position: relative;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         text-align: left;
         color: $black-three;
@@ -1284,9 +1369,9 @@ body {
       }
 
       &_text {
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 1.25;
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 30px;
         color: $white;
         margin-bottom: 45px;
       }
@@ -2407,10 +2492,16 @@ textarea.bcg-custom-field {
 
       a {
         color: $pinkish-grey-three;
+		  font-size: 14px;
         &:hover {
           text-decoration: underline;
-          color: #4da0ff;
+          color: $dodger-blue;
         }
+      }
+		
+	p {
+        color: $pinkish-grey-three;
+		font-size: 14px;
       }
 
       &_item {
@@ -2438,6 +2529,7 @@ textarea.bcg-custom-field {
         font-weight: bold;
         height: 35px;
         margin: 0;
+		  font-family: "Europa", sans-serif;
       }
     }
   }
@@ -2460,7 +2552,14 @@ textarea.bcg-custom-field {
   .corporate__bcg-2__products_title,
   .corporate__bcg-2__started_item_title {
     font-size: 24px;
+	  padding-top: 20px;
+	  max-height: 40px;
   }
+	.corporate__bcg-2__started_info a {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
   .corporate__bcg-2__products_text,
   .corporate__bcg-2__started_item_text {
@@ -2593,6 +2692,23 @@ textarea.bcg-custom-field {
 }
 
 @include media(767) {
+	.mobile_hide {
+		display: none;
+	}
+	.mobile_show {
+		display: block;
+	}
+	.scrollmagic-pin-spacer {
+		position: fixed !important;
+		z-index: 900;
+	}
+	.custom-bcg-title span {
+	font-size: 14px;
+    padding-bottom: 30px;
+	}
+	.custom-bcg-title span:before {
+		bottom: 10px;
+	}
   .corporate__head__nav_btn {
     width: 37px;
     min-width: 37px;
@@ -2603,7 +2719,6 @@ textarea.bcg-custom-field {
       min-width: 25px;
     }
   }
-
   .corporate__head__nav_inner {
     position: fixed;
     top: 0;
@@ -2651,24 +2766,36 @@ textarea.bcg-custom-field {
   }
 
   .corporate__bcg-1 {
-    margin-top: 30px;
+    margin-top: 0;
   }
+	
+	.corporate__bcg-1:before {
+		position: absolute;
+	}
 
+	.corporate__bcg-1__inner .iphone_cont {
+		width: 100%;
+	}
   .corporate__bcg-1__inner_phone {
     max-height: 300px;
   }
 
   .corporate__bcg-1 {
-    min-height: 550px;
+    min-height: 580px;
   }
+	.corporate__bcg-1__inner {
+		top: 0;
+	}
 
   .corporate__bcg-1__inner_title {
-    font-size: 28px;
+	  font-size: 22px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .corporate__bcg-1__inner_subtitle {
     margin-bottom: 30px;
+	  font-size: 14px;
   }
 
   .corporate__bcg-2_brands {
@@ -2689,7 +2816,12 @@ textarea.bcg-custom-field {
     height: auto;
     margin-bottom: 15px;
   }
-
+	.corporate__bcg-2__started .mobile_phone_boxes {
+		position: absolute;
+    top: -60px;
+    width: 100%;
+    left: 0;
+	}
   .corporate__bcg-2__started_info {
     max-width: none;
     width: 100%;
@@ -2698,6 +2830,7 @@ textarea.bcg-custom-field {
   .corporate__bcg-2__started_inner {
     max-width: 100%;
     flex-direction: column;
+	  padding-top: 220px;
   }
 
   .corporate__bcg-2__started_images {
@@ -2707,6 +2840,9 @@ textarea.bcg-custom-field {
   .corporate__bcg-4__info_title, .corporate__bcg-5_title, .corporate__bcg-2__started_info-title {
     font-size: 25px;
   }
+	.corporate__bcg-4__info.info-helper {
+		padding-bottom: 80px;
+	}
 
   .corporate__bcg-2__started_info-title {
     margin-bottom: 40px;
@@ -2725,10 +2861,16 @@ textarea.bcg-custom-field {
     align-items: center;
     text-align: center;
   }
+	.corporate__bcg-2__started_info-title {
+    line-height: normal;
+    margin: 40px;
+    text-align: center;
+}
 
   .corporate__bcg-2__started_item_title,
   .corporate__bcg-2__products_text, .corporate__bcg-2__started_item_text {
     text-align: center;
+	  padding: 0 20px;
   }
 
   .corporate__bcg-2__started_item_right {
@@ -2758,7 +2900,7 @@ textarea.bcg-custom-field {
 
   .corporate__bcg-3__sky_inner {
     flex-direction: column;
-    padding: 200px 0;
+    padding: 200px 0 300px 0;
     width: 100%;
   }
 
@@ -2772,7 +2914,17 @@ textarea.bcg-custom-field {
     height: 2px;
     margin: 30px auto;
   }
-
+	.corporate__bcg-3__sky_title {
+	padding: 0 40px 20px 40px;
+		margin-top: 0;
+	}
+	.corporate__bcg-3__sky_text, .corporate__bcg-6_text, .corporate__bcg-6__list_item {
+		margin: 0 20px;
+		padding-bottom: 20px;
+	}
+	.corporate__bcg-6_text {
+		padding-bottom: 40px;
+	}
   .svg-shape {
     width: 200%;
   }
@@ -2781,7 +2933,9 @@ textarea.bcg-custom-field {
     margin-top: -200px;
     overflow: hidden;
   }
-
+	.mobile_app_screens {
+		margin-top: 40px;
+	}
   .corporate__bcg-4__grid {
     flex-direction: column;
     overflow: hidden;
@@ -2792,12 +2946,14 @@ textarea.bcg-custom-field {
   }
 
   .corporate__bcg-4__grid_clip {
-    padding: 0 15px 30px;
+    padding: 160px 15px 30px 15px;
+	  background: url("../images/marble.png");
+	  background-position: bottom center;
   }
 
   .corporate__bcg-3_title,
   .corporate__bcg-3_subtitle {
-    padding: 0 15px;
+    padding: 0 40px;
   }
 
   .corporate__bcg-3_subtitle {
@@ -2809,7 +2965,7 @@ textarea.bcg-custom-field {
   }
 
   .corporate__bcg-4 {
-    margin-top: -30px;
+    margin-top: -230px;
   }
 
   .corporate__bcg-4__grid_fill {
@@ -2822,6 +2978,7 @@ textarea.bcg-custom-field {
   .corporate__bcg-4__info_text {
     max-width: 100%;
     text-align: center;
+	  padding: 0 10px;
   }
 
   .corporate__bcg-4__info .custom-button-orange {
@@ -2844,12 +3001,14 @@ textarea.bcg-custom-field {
   }
 
   .corporate__bcg-6_right {
-    order: 0;
+    order: 2;
     margin-bottom: 20px;
+	  padding-top: 60px;
   }
 
   .corporate__bcg-6 .svg-triangle.triangle-top {
-    display: none;
+    display: block;
+	  margin-top: -100px;
   }
 
   .corporate__bcg-7__users {
@@ -2862,6 +3021,9 @@ textarea.bcg-custom-field {
       margin-top: 45px;
     }
   }
+	.corporate__bcg-7__users_name {
+		font-size: 20px;
+	}
 
   .corporate__footer__grid {
     flex-direction: column;
@@ -2926,12 +3088,15 @@ textarea.bcg-custom-field {
 
   .corporate__bcg-1_vegies {
     top: auto;
-    height: 40%;
+    height: 50%;
   }
 
   .corporate__bcg-5 .svg-triangle {
     margin-top: -15vw;
     height: 15vw;
   }
-
+.corporate__footer__grid_title {
+    height: 30px;
+    margin-top: 20px;
+}
 }

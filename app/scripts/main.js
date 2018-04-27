@@ -111,12 +111,12 @@
     $('.polaroid-images').hammer().bind('swiperight', hadlerOnRight);
 
     // animation
-    $('.corporate__head__nav_btn').velocity({ opacity: 1, translateX: [ 0, 100 ] }, { display: 'flex', duration: 1000 });
-    $('.corporate__bcg-1__inner_title').velocity('transition.slideDownIn', 800)
+    $('.corporate__bcg-1__inner_title').velocity('transition.slideDownIn', 800);
     $('.corporate__bcg-1__inner_subtitle').velocity('transition.slideUpIn', 300, function() {
       $('.corporate__bcg-1__inner .custom-button-orange').velocity('transition.fadeIn', {display: 'flex', visibility: 'visible'});
-    })
+    });
     $('.corporate__bcg-1_vegies').velocity('transition.fadeIn', 3000);
+	
     $('.corporate__head__nav_item').velocity('transition.slideUpIn',
       { stagger: 100, complete: function() {
       $('.corporate__bcg-1__inner_phone').velocity('transition.slideUpBigIn');
@@ -133,7 +133,7 @@
       }, 10);
     });
 
-    //dinamic words
+    //dynamic words
 
     var wordsArray = ['My Body', 'My Metabolism', 'My Goals', 'My Life'];
     for(var i = 0; i < wordsArray.length; i++) {
@@ -182,7 +182,7 @@
                 duration: 600,
                 complete: function() {
                   $('.corporate__bcg-2__started_phone .phone-img').velocity('transition.slideLeftBigIn', 500, function() {
-                    $('.corporate__bcg-2__started_phone .phone-screen').velocity({scale: [1, 0]}, {duration: 800, easing: [ 250, 60 ]})
+                    $('.corporate__bcg-2__started_phone .phone-screen').velocity({scale: [1, 0]}, {duration: 800, easing: [ 250, 60 ]});
                   });
                 }
               });
