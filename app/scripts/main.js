@@ -112,15 +112,11 @@
 
     // animation
     $('.corporate__bcg-1__inner_title').velocity('transition.slideDownIn', 800);
-    $('.corporate__bcg-1__inner_subtitle').velocity('transition.slideUpIn', 300, function() {
-      $('.corporate__bcg-1__inner .custom-button-orange').velocity('transition.fadeIn', {display: 'flex', visibility: 'visible'});
-    });
+    $('.corporate__bcg-1__inner_subtitle').velocity('transition.slideUpIn', 300);
+    $('.corporate__bcg-1__inner .custom-button-orange').velocity('transition.fadeIn', {display: 'flex', visibility: 'visible'}, 300);
     $('.corporate__bcg-1_vegies').velocity('transition.fadeIn', 3000);
-	
-    $('.corporate__head__nav_item').velocity('transition.slideUpIn',
-      { stagger: 100, complete: function() {
-      $('.corporate__bcg-1__inner_phone').velocity('transition.slideUpBigIn');
-    }});
+    $('.corporate__bcg-1__inner_phone').velocity('transition.slideUpBigIn');
+    $('.corporate__head__nav_item').velocity('transition.slideUpIn');
 
     $('.corporate__head__nav_menu-togler').change(function() {
       var check = $(this).find('input[type="checkbox"]');

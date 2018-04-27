@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Europa-BoldItalic";
+    src: url("europa-bolditalic-webfont.eot");
+    src: url("europa-bolditalic-webfont.eot?#iefix") format("embedded-opentype"),
+         url("europa-bolditalic-webfont.woff2") format("woff2"),
+         url("europa-bolditalic-webfont.woff") format("woff"),
+         url("europa-bolditalic-webfont.ttf") format("ttf"),
+         url("europa-bolditalic-webfont.svg#Europa-BoldItalic") format("svg");
+    font-style: normal;
+    font-weight: 700;
+}
