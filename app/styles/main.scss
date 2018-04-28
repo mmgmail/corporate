@@ -1530,7 +1530,7 @@ textarea.bcg-custom-field {
 
 .bcg-contact-from-container {
   padding-bottom: 50px;
-  margin-top: -350px;
+  margin-top: -390px;
   position: relative;
   z-index: 1;
 
@@ -1906,10 +1906,11 @@ textarea.bcg-custom-field {
     letter-spacing: 4.8px;
     text-align: left;
     color: $mango;
-    padding: 4px 10px 3px 16px;
+    padding: 5px 8px 4px 15px;
     text-transform: uppercase;
     user-select: none;
     text-align: center;
+    text-transform: lowercase;
   }
 }
 
@@ -1956,6 +1957,10 @@ textarea.bcg-custom-field {
       color: $black-three;
       margin: 0 0 10px 0;
       padding: 0;
+
+      @include l-small() {
+        padding-top: 45px;
+      }
     }
 
     &_descr {
@@ -1986,13 +1991,19 @@ textarea.bcg-custom-field {
     &_item {
       display: flex;
       align-items: center;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       text-align: left;
     }
 
     &_icon {
-      min-width: 65px;
-      width: 65px;
+      min-width: 70px;
+      width: 70px;
+    }
+
+    &_note {
+      font-size: 18px;
+      font-weight: bold;
+      color: rgb(74, 172, 255);
     }
   }
 
@@ -2066,12 +2077,18 @@ textarea.bcg-custom-field {
   .corporate__bcg-6__list_item {
     color: $dodger-blue;
     font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 30px;
   }
 
   .corporate__bcg-6__list_item:before {
     border-color: $dodger-blue;
     width: 8px;
     height: 15px;
+    width: 9px;
+    height: 19px;
+    transform: rotate(50deg);
+    top: 3px;
   }
 }
 
@@ -2373,7 +2390,7 @@ textarea.bcg-custom-field {
     }
 
     &_block {
-      margin-bottom: 30px;
+      margin-bottom: 42px;
     }
 
     &_title {
@@ -2438,6 +2455,7 @@ textarea.bcg-custom-field {
         font-weight: bold;
         text-align: center;
         color: $dodger-blue;
+        line-height: 1.45;
       }
     }
 
@@ -2867,7 +2885,7 @@ textarea.bcg-custom-field {
     line-height: normal;
     margin: 40px;
     text-align: center;
-}
+  }
 
   .corporate__bcg-2__started_item_title,
   .corporate__bcg-2__products_text, .corporate__bcg-2__started_item_text {
@@ -3097,10 +3115,14 @@ textarea.bcg-custom-field {
     margin-top: -15vw;
     height: 15vw;
   }
-.corporate__footer__grid_title {
-    height: 30px;
-    margin-top: 20px;
-}
+  .corporate__footer__grid_title {
+      height: 30px;
+      margin-top: 20px;
+  }
+
+  .corporate__bcg-2_brands {
+    padding: 20px 10px;
+  }
 }
 
 @include media(350) {
