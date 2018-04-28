@@ -385,6 +385,7 @@ body {
       object-fit: cover;
       object-position: center;
       opacity: 0;
+      height: 100%;
     }
 
     &__inner {
@@ -2801,10 +2802,6 @@ textarea.bcg-custom-field {
   .corporate__bcg-1__inner_subtitle {
     margin-bottom: 30px;
 	  font-size: 14px;
-  }
-
-  .corporate__bcg-2_brands {
-    display: none;
   }
 
   .corporate__bcg-2__products {
