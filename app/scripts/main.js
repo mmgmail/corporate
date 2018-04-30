@@ -129,6 +129,11 @@
       }, 10);
     });
 
+    $('.corporate__head__nav_inner a').click(function() {
+      $('.corporate__head__nav_menu-togler input').attr('checked', false);
+      $('.corporate__head__nav_inner').velocity('transition.fadeOut');
+    });
+
     //dynamic words
 
     var wordsArray = ['My Body', 'My Metabolism', 'My Goals', 'My Life'];
