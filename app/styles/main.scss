@@ -2616,6 +2616,7 @@ textarea.bcg-custom-field {
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
+    border: none;
   }
 
   .corporate__bcg-2__products_text,
@@ -2935,6 +2936,10 @@ textarea.bcg-custom-field {
   .corporate__bcg-2__started_item_title {
     text-align: center;
     padding: 0 20px;
+  }
+
+  .corporate__bcg-2__started_item_text {
+    margin: 5px auto 0;
   }
 
   .corporate__bcg-2__started_item_right {
