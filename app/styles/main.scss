@@ -749,6 +749,9 @@ body {
 
       &_icon {
         height: 110px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
 
         img {
           width: 100px;
