@@ -753,6 +753,10 @@ body {
         align-items: flex-end;
         justify-content: center;
 
+        @include small() {
+          align-items: flex-start;
+        }
+
         img {
           width: 100px;
         }
