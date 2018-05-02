@@ -3216,12 +3216,19 @@ textarea.bcg-custom-field {
   padding: 0 20px;
   position: relative;
   z-index: 2;
-  img {
-    margin: 0 auto -50%;
+
+
+  @include media(767) {
+    display: block;
+    img {
+      margin: 0 auto -34%;
+    }
   }
 
-  @include small() {
-    display: block;
+  @include media(500) {
+    img {
+      margin: 0 auto -50%;
+    }
   }
 }
 
