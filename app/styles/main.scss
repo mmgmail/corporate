@@ -77,7 +77,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: $white;
-  overflow-x: hidden;
 }
 
 .mobile_hidden {
@@ -90,6 +89,7 @@ body {
 
 .corporate {
   flex: 1 0 auto;
+  overflow-x: hidden;
 }
 
 .custom-button-orange {
